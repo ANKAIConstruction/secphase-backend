@@ -25,7 +25,8 @@ app.use(helmet({
 
 // ── CORS ─────────────────────────────────────────────────────────
 const allowedOrigins = [
-  process.env.CORS_ORIGIN || 'https://www.secphase.com',
+  process.env.CORS_ORIGIN || 'https://www.secphase.com', 
+'https://lambent-nougat-9995b4.netlify.app',
   'http://localhost:3000',
   'http://localhost:5500',
   'http://127.0.0.1:5500'
