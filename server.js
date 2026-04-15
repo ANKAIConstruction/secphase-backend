@@ -12,6 +12,7 @@ const fs           = require('fs');
 const enquiryRouter = require('./routes/enquiry');
 
 const app  = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 3000;
 
 // ── Ensure upload directory exists ───────────────────────────────
